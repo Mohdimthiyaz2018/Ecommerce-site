@@ -1,0 +1,29 @@
+{
+  "name": "congo",
+  "version": "1.0.0",
+  "description": "Ecommerce application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./Backend/server.js",
+    "dev": "set NODE_ENV=development&&nodemon ./Backend/server.js",
+    "prod": "set NODE_ENV=production&&nodemon ./Backend/server.js",
+    "seeder": "node ./Backend/Utils/seeder.js"
+  },
+  "author": "MOHAMED IMTHIYAZ A",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2",
+    "nodemailer": "^6.9.8",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
